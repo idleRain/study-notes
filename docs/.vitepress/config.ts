@@ -19,7 +19,7 @@ const config: UserConfig<DefaultTheme.Config> = {
         text: '相关技术',
         items: [
           { text: 'vitepress', link: 'https://vitepress.dev/zh/' },
-          { text: 'markdown-it', link: 'https://github.com/markdown-it/markdown-it' },
+          { text: 'markdown-it', link: 'https://markdown-it.docschina.org' },
           { text: 'localtunnel', link: 'https://github.com/localtunnel/localtunnel' }
         ]
       }
@@ -30,6 +30,12 @@ const config: UserConfig<DefaultTheme.Config> = {
     ],
     sidebarMenuLabel: '目录',
     outline: { label: '页面导航' }
+  },
+  vite: {
+    server: {
+      port: 12321,
+      host: '0.0.0.0'
+    }
   }
 }
 
