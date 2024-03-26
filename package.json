@@ -1,0 +1,16 @@
+{
+  "name": "study-notes",
+  "version": "1.0.0",
+  "description": "好！",
+  "main": "index.js",
+  "author": "idleRain",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.1"
+  }
+}
