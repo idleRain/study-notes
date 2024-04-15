@@ -47,7 +47,6 @@ jobs:
           REMOTE_HOST: ${{ secrets.SERVER_HOST }}
           # 服务器私钥，我们在项目的secrets中配置的PRIVATE_KEY
           SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-          ssh_private_key: ${{ secrets.PRIVATE_KEY }}
           # 项目打包后的文件路径(根据你们实际的打包路径进行修改)
           local_path: './docs/.vuepress/dist/*'
           # 服务器上的项目路径(根据你们实际的项目路径进行修改)
