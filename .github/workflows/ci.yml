@@ -14,7 +14,7 @@ jobs:
     strategy:
       matrix:
         # 一定要注意！这里一定要是自己项目所使用的node版本，否则在自动打包时会出错。
-        node-version: [ 20.x ]
+        node-version: [ 20.5.1 ]
     # 这是工作的实际步骤。
     steps:
       # 步骤1 这是步骤的名称，表示将检出（克隆）代码库。
@@ -24,7 +24,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20'
+          node-version: '20.5.1'
       # 步骤2 这是步骤的名称，表示使用特定的Node.js版本。
       - name: Use Node.js ${{ matrix.node-version }}
         # 使用的动作。这里使用了actions/setup-node@v1，用于安装指定版本的Node.js。
